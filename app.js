@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { google }= require('googleapis');
 
-const apikeys = require('./apiKey.json');
+const apikeys = require('==Json file path ==');
 const SCOPE = ['https://www.googleapis.com/auth/drive'];
 
 // A Function that can provide access to google drive api
@@ -26,7 +26,7 @@ async function uploadFile(authClient){
         var fileMetaData = {
             name:'20235134',
             mimeType: 'application/vnd.google-apps.folder',
-            parents:['1tedCr_YUZuPBUbHUPECIaHfW1SJdFIlI'] // A folder ID to which file will get uploaded, give editor permission previously using the client_email in the Json file
+            parents:['==FoderId=='] // A folder ID to which file will get uploaded, give editor permission previously using the client_email in the Json file
         }
 
         drive.files.create({
